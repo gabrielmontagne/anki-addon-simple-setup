@@ -1,0 +1,12 @@
+= Anki addon: simple setup: run an arbitrary shell command when presenting a card
+
+To use: if add a `Setup` field to your note.
+If this addon finds it, it will execute it in a new process.
+
+This is useful for opening up tools, starting files, etc.
+
+Easiest install, soft-link this folder from your Anki addons folder, for example, 
+
+----
+~/.local/share/Anki2/addons21
+----
