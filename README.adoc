@@ -10,3 +10,5 @@ Easiest install, soft-link this folder from your Anki addons folder, for example
 ----
 ~/.local/share/Anki2/addons21
 ----
+
+WARNING: Evil and bad things can happen if you run arbitrary code from random decks.  Use at your own risk!  I cannot be responsible for any kind of mess you allow to happen by using this addon.
