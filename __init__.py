@@ -1,5 +1,6 @@
 from aqt import gui_hooks
-from subprocess import Popen
+from subprocess import run
+from shlex import split
 
 def run_simple_setup(card):
     note = card.note()
@@ -10,10 +11,8 @@ def run_simple_setup(card):
 
     if not setup: return
 
-    print('Run setup for card:', setup)
+    print('Run setup for pneq:', setup)
 
-    pid = Popen(setup.split()).pid
-
-    print('Setup pid', pid)
+    run(split(setup))
 
 gui_hooks.reviewer_did_show_question.append(run_simple_setup)
